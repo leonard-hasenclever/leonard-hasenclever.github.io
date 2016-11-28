@@ -10,7 +10,7 @@
 
   <title>
     
-      Leonard Hasenclever &middot; Machine Learning PhD Student at Oxford
+      Blog &middot; Leonard Hasenclever
     
   </title>
 
@@ -65,7 +65,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="/blog/">Blog</a>
+          <a class="sidebar-nav-item active" href="/blog/">Blog</a>
         
       
     
@@ -114,45 +114,39 @@
       </div>
 
       <div class="container content">
-        <div style="display:inline-block vertical-align:top">
-<img src="img/hasenclever.jpg" class="pull-left" style="margin:20px
-20px 20px 0; height:200px; width:200px; border-radius:25px" />
-</div>
-<div style="display:inline-block">
-  <h1>Leonard Hasenclever</h1>
-  <p class="lead">
-    Machine Learning PhD Student at Oxford<br />
-    <a href="https://twitter.com/lqh20" class="icon">
-      <i class="fa fa-twitter fa-lg"></i>
-    </a>
-    <a href="https://github.com/lqh20" class="icon">
-      <i class="fa fa-github fa-lg"></i>
-    </a>
-    <a href="https://scholar.google.co.uk/citations?user=dD-3S4QAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
-    <a href="https://uk.linkedin.com/in/leonard-hasenclever-61458649
-" class="icon">
-      <i class="fa fa-linkedin fa-lg"></i>
-    </a>
-  </p>
-</div>
-<p><br />
-<br /></p>
+        <div class="page">
+  <h1 class="page-title">Blog</h1>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<h2 id="about-me">About me</h2>
 
-<p>I am a PhD student in Statistics and Machine Learning at the University of Oxford working with <a href="http://www.stats.ox.ac.uk/~teh">Yee Whye Teh</a>. My studies are funded as part of the <a href="http://www.oxwasp-cdt.ac.uk">OxWaSP centre for doctoral training</a>.</p>
+<div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/11/21/SNEP/">
+        Stochastic Natural Gradient EP @ NIPS
+      </a>
+    </h1>
 
-<p>I am interested in Bayesian statistics, machine learning and deep learning. In particular I am working on large scale Bayesian machine learning. Most of my research so far has been on distributed Bayesian learning using stochastic natural gradient expectation propagation. I am also interested in stochastic gradient MCMC methods and variational inference. Occasionally I <a href="blog/index.html">blog</a> about my work.</p>
+    <span class="post-date">21 Nov 2016</span>
 
-<p><a href="assets/cv.pdf">Curriculum Vitae</a></p>
+    <p>I will present our work on distributed Bayesian learning with stochastic natural gradient EP at the <a href="http://approximateinference.org/">Advances in Approximate Bayesian Inference Workshop</a> and the <a href="http://bayesiandeeplearning.org/">Bayesian Deep Learning Workshop</a> at NIPS 2016. It’s joint work with Stefan Webb, Thibaut Lienart, Sebastian Vollmer (all Oxford), Balaji Lakshminarayanan, Charles Blundell (both Google DeepMind) and Yee Whye Teh (Oxford &amp; Google DeepMind). Here is a link to
+our <a href="https://arxiv.org/abs/1512.09327">arxiv preprint</a>.</p>
+
+<p>Here’s the abstract:</p>
+
+<blockquote>
+  <p>This paper makes two contributions to Bayesian machine learning algorithms. Firstly, we propose stochastic natural gradient expectation propagation (SNEP), a novel alternative to expectation propagation (EP), a popular variational inference algorithm. SNEP is a black box variational algorithm, in that it does not require any simplifying assumptions on the distribution of interest, beyond the existence of some Monte Carlo sampler for estimating the moments of the EP tilted distributions. Further, as opposed to EP which has no guarantee of convergence, SNEP can be shown to be convergent, even when using Monte Carlo moment estimates. Secondly, we propose a novel architecture for distributed Bayesian learning which we call the posterior server. The posterior server allows scalable and robust Bayesian learning in cases where a dataset is stored in a distributed manner across a cluster, with each compute node containing a disjoint subset of data. An independent Monte Carlo sampler is run on each compute node, with direct access only to the local data subset, but which targets an approximation to the global posterior distribution given all data across the whole cluster. This is achieved by using a distributed asynchronous implementation of SNEP to pass messages across the cluster. We demonstrate SNEP and the posterior server on distributed Bayesian learning of logistic regression and neural networks.</p>
+</blockquote>
+
+<p>SNEP is a neat extension of EP that lends itself well to distributed computing. It is both interesting as a variational inference method and shows great potential in the context of Bayesian neural networks. In our experiments SNEP is roughly as fast as existing distributed SGD methods but has the advantage of being Bayesian. We’ve recently released the code at <a href="https://github.com/BigBayes/PosteriorServer">https://github.com/BigBayes/PosteriorServer</a>. Check it out!</p>
 
 <div class="post-content">
 
   
-  
 
   
-    <h2>Publications</h2>
+    <h2>References</h2>
     <h2 class="bibliography">2016</h2>
 <ul class="bibliography"><li>
 
@@ -247,8 +241,38 @@ Y. W. Teh,
   </div>
 
 </div>
-<a class="details" href="/publications/HasWebLie2015a/"></a></li>
-<li>
+<a class="details" href="/publications/HasWebLie2015a/"></a></li></ul>
+  
+
+</div>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/11/15/relativistic-monte-carlo/">
+        Relativistic Monte Carlo @ BDL2016
+      </a>
+    </h1>
+
+    <span class="post-date">15 Nov 2016</span>
+
+    <p>Our work (joint work with Xiaoyu Lu, Valerio Perrone, Sebastian Vollmer and Yee Whye Teh) on relativistic Monte Carlo was accepted as a contributed talk at the <a href="http://bayesiandeeplearning.org/">Bayesian Deep Learning Workshop at NIPS 2016</a>. Come along at 11:20am on December 10 when Valerio and Xiaoyu will be presenting our work.</p>
+
+<p>We are excited about Relativistic Monte Carlo as a way to derive an MCMC algorithm more robust to hyperparameter choice. Here is the abstract:</p>
+
+<blockquote>
+  <p>Hamiltonian Monte Carlo (HMC) is a popular Markov chain Monte Carlo (MCMC) algorithm that generates proposals for a Metropolis-Hastings algorithm by simulating the dynamics of a Hamiltonian system. However, HMC is sensitive to large time discretizations and performs poorly if there is a mismatch between the spatial geometry of the target distribution and the scales of the momentum distribution. In particular the mass matrix of HMC is hard to tune well. In order to alleviate these problems we propose relativistic Hamiltonian Monte Carlo, a version of HMC based on relativistic dynamics that introduce a maximum velocity on particles. We also derive stochastic gradient versions of the algorithm and show that the resulting algorithms bear interesting relationships to gradient clipping, RMSprop, Adagrad and Adam, popular optimisation methods in deep learning. Based on this, we develop relativistic stochastic gradient descent by taking the zero-temperature limit of relativistic stochastic gradient Hamiltonian Monte Carlo. In experiments we show that the relativistic algorithms perform better than classical Newtonian variants and Adam.</p>
+</blockquote>
+
+<div class="post-content">
+
+  
+
+  
+    <h2>References</h2>
+    <h2 class="bibliography">2016</h2>
+<ul class="bibliography"><li>
 
 
 
@@ -327,174 +351,23 @@ S. J. Vollmer,
 
 </div>
 <a class="details" href="/publications/LuPerHas2016a/"></a></li></ul>
-<h2 class="bibliography">2014</h2>
-<ul class="bibliography"><li>
-
-
-
-W. Hordijk,
-
-
-
-<b>
-L. Hasenclever</b>,
-
-
-
-
-J. Gao,
-
-
-
-
-D. Mincheva,
-
-
-
-
-J. Hein,
-
-<span id="Hordijk2014"><b>An investigation into irreducible autocatalytic sets and power law distributed catalysis</b>, <i>Natural Computing</i>, vol. 13, no. 3, pp. 287–296, 2014. </span>
-
-<br />
-
-<div id="Hordijk2014-supplementary">
   
-  <button onclick="$('#Hordijk2014-abstract').toggle( );$('#Hordijk2014-bibtex').hide();">Abstract</button>
-  
-  <button onclick="$('#Hordijk2014-bibtex').toggle( );$('#Hordijk2014-abstract').hide();">BibTeX</button>
-  
-
-  
-  <form method="get" action="assets/horhasgao2014.pdf">
-    <button type="submit">PDF</button>
-  </form>
-  
-
-  
-  <form method="get" action="http://dx.doi.org/10.1007/s11047-014-9429-6">
-    <button type="submit">URL</button>
-  </form>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <div id="Hordijk2014-abstract" style="display:none;">
-    <div class="abstract">RAF theory has been established as a useful and formal framework for studying the emergence and evolution of autocatalytic sets. Here, we present several new and additional results on RAF sets. In particular, we investigate in more detail the existence, expected sizes, and composition of the smallest possible, or irreducible, RAF sets. Furthermore, we study a more realistic variant of the well-known binary polymer model in which the catalysis events are assigned according to a power law distribution. Together, these results provide further insights into the existence and structure of autocatalytic sets in simple models of chemical reaction systems, with possible implications for theories on the origin of life.</div>
-  </div>
-  
-
-  <div id="Hordijk2014-bibtex" style="display:none;">
-    <pre>@article{Hordijk2014,
-  author = {Hordijk, W. and Hasenclever, L. and Gao, J. and Mincheva, D. and Hein, J.},
-  doi = {10.1007/s11047-014-9429-6},
-  issn = {1572-9796},
-  journal = {Natural Computing},
-  number = {3},
-  pages = {287--296},
-  title = {{An investigation into irreducible autocatalytic sets and power law distributed catalysis}},
-  volume = {13},
-  year = {2014}
-}
-</pre>
-  </div>
 
 </div>
-<a class="details" href="/publications/Hordijk2014/"></a></li></ul>
-<h2 class="bibliography">2013</h2>
-<ul class="bibliography"><li>
 
-
-
-S. S. Pegler,
-
-
-
-
-K. N. Kowal,
-
-
-
-<b>
-L. Hasenclever</b>,
-
-
-
-
-M. G. Worster,
-
-<span id="Pegler2013"><b>Lateral controls on grounding-line dynamics</b>, <i>Journal of Fluid Mechanics</i>, vol. 722, no. 5929, p. R1, May 2013. </span>
-
-<br />
-
-<div id="Pegler2013-supplementary">
-  
-  <button onclick="$('#Pegler2013-abstract').toggle( );$('#Pegler2013-bibtex').hide();">Abstract</button>
-  
-  <button onclick="$('#Pegler2013-bibtex').toggle( );$('#Pegler2013-abstract').hide();">BibTeX</button>
-  
-
-  
-
-  
-  <form method="get" action="http://www.journals.cambridge.org/abstract_S0022112013001407">
-    <button type="submit">URL</button>
-  </form>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <div id="Pegler2013-abstract" style="display:none;">
-    <div class="abstract">We present a theoretical and experimental study of viscous gravity currents introduced at the surface of a denser inviscid fluid layer of finite depth inside a vertical Hele-Shaw cell. Initially, the viscous fluid floats on the inviscid fluid, forming a self-similar, buoyancy-driven current resisted predominantly by the viscous stresses due to shear across the width of the cell. Once the viscous current contacts the base of the cell, the flow can be considered in two regions: a grounded region in which the current lies in full contact with the base; and a floating region. The subsequent advance of the grounding line separating these regions is shown to be controlled by the thickening of the current associated with balancing the local shear stresses. An understanding of the flow transitions is developed using asymptotic and numerical analysis of a model based on lubrication theory.</div>
   </div>
   
-
-  <div id="Pegler2013-bibtex" style="display:none;">
-    <pre>@article{Pegler2013,
-  author = {Pegler, S. S. and Kowal, K. N. and Hasenclever, L. and Worster, M. G.},
-  doi = {10.1017/jfm.2013.140},
-  file = {:home/leonard/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Pegler et al. - 2013 - Lateral controls on grounding-line dynamics.pdf:pdf},
-  issn = {0022-1120},
-  journal = {Journal of Fluid Mechanics},
-  keywords = {Hele-Shaw flows,geophysical and geological flows,ice sheets},
-  month = may,
-  number = {5929},
-  pages = {R1},
-  publisher = {Cambridge University Press},
-  title = {{Lateral controls on grounding-line dynamics}},
-  volume = {722},
-  year = {2013}
-}
-</pre>
-  </div>
-
 </div>
-<a class="details" href="/publications/Pegler2013/"></a></li></ul>
-  
 
+<div class="pagination">
   
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
 </div>
 
       </div>
