@@ -4,7 +4,7 @@
  <title>Leonard Hasenclever</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2016-11-27T13:51:05+00:00</updated>
+ <updated>2017-01-29T20:56:16+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Leonard Hasenclever</name>
@@ -152,88 +152,6 @@ Y. W. Teh,
 
   
 
-  
-    &lt;h2&gt;References&lt;/h2&gt;
-    &lt;h2 class=&quot;bibliography&quot;&gt;2016&lt;/h2&gt;
-&lt;ul class=&quot;bibliography&quot;&gt;&lt;li&gt;
-
-
-
-X. Lu,
-
-
-
-
-V. Perrone,
-
-
-
-&lt;b&gt;
-L. Hasenclever&lt;/b&gt;,
-
-
-
-
-Y. W. Teh,
-
-
-
-
-S. J. Vollmer,
-
-&lt;span id=&quot;LuPerHas2016a&quot;&gt;&lt;b&gt;Relativistic Monte Carlo&lt;/b&gt;, 2016. &lt;/span&gt;
-
-&lt;br /&gt;
-
-&lt;div id=&quot;LuPerHas2016a-supplementary&quot;&gt;
-  
-  &lt;button onclick=&quot;$('#LuPerHas2016a-abstract').toggle( );$('#LuPerHas2016a-bibtex').hide();&quot;&gt;Abstract&lt;/button&gt;
-  
-  &lt;button onclick=&quot;$('#LuPerHas2016a-bibtex').toggle( );$('#LuPerHas2016a-abstract').hide();&quot;&gt;BibTeX&lt;/button&gt;
-  
-  &lt;form method=&quot;get&quot; action=&quot;https://arxiv.org/abs/1609.04388&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;arXiv&lt;/button&gt;
-  &lt;/form&gt;
-  
-
-  
-  &lt;form method=&quot;get&quot; action=&quot;https://arxiv.org/pdf/1609.04388v1.pdf&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;PDF&lt;/button&gt;
-  &lt;/form&gt;
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  &lt;div id=&quot;LuPerHas2016a-abstract&quot; style=&quot;display:none;&quot;&gt;
-    &lt;div class=&quot;abstract&quot;&gt;Hamiltonian Monte Carlo (HMC) is a popular Markov chain Monte Carlo (MCMC) algorithm that generates proposals for a Metropolis-Hastings algorithm by simulating the dynamics of a Hamiltonian system. However, HMC is sensitive to large time discretizations and performs poorly if there is a mismatch between the spatial geometry of the target distribution and the scales of the momentum distribution. In particular the mass matrix of HMC is hard to tune well. In order to alleviate these problems we propose relativistic Hamiltonian Monte Carlo, a version of HMC based on relativistic dynamics that introduce a maximum velocity on particles. We also derive stochastic gradient versions of the algorithm and show that the resulting algorithms bear interesting relationships to gradient clipping, RMSprop, Adagrad and Adam, popular optimisation methods in deep learning. Based on this, we develop relativistic stochastic gradient descent by taking the zero-temperature limit of relativistic stochastic gradient Hamiltonian Monte Carlo. In experiments we show that the relativistic algorithms perform better than classical Newtonian variants and Adam.&lt;/div&gt;
-  &lt;/div&gt;
-  
-
-  &lt;div id=&quot;LuPerHas2016a-bibtex&quot; style=&quot;display:none;&quot;&gt;
-    &lt;pre&gt;@unpublished{LuPerHas2016a,
-  author = {Lu, X. and Perrone, V. and Hasenclever, L. and Teh, Y. W. and Vollmer, S. J.},
-  note = {ArXiv e-prints: 1609.04388},
-  title = {Relativistic {M}onte {C}arlo},
-  year = {2016}
-}
-&lt;/pre&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;a class=&quot;details&quot; href=&quot;/publications/LuPerHas2016a/&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
   
 
 &lt;/div&gt;
