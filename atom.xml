@@ -4,7 +4,7 @@
  <title>Leonard Hasenclever</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-03-20T10:26:33+01:00</updated>
+ <updated>2017-08-20T18:44:06+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Leonard Hasenclever</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Stochastic Natural Gradient EP @ NIPS</title>
    <link href="http://localhost:4000/2016/11/21/SNEP/"/>
-   <updated>2016-11-21T00:00:00+01:00</updated>
+   <updated>2016-11-21T00:00:00+00:00</updated>
    <id>http://localhost:4000/2016/11/21/SNEP</id>
    <content type="html">&lt;p&gt;I will present our work on distributed Bayesian learning with stochastic natural gradient EP at the &lt;a href=&quot;http://approximateinference.org/&quot;&gt;Advances in Approximate Bayesian Inference Workshop&lt;/a&gt; and the &lt;a href=&quot;http://bayesiandeeplearning.org/&quot;&gt;Bayesian Deep Learning Workshop&lt;/a&gt; at NIPS 2016. It’s joint work with Stefan Webb, Thibaut Lienart, Sebastian Vollmer (all Oxford), Balaji Lakshminarayanan, Charles Blundell (both Google DeepMind) and Yee Whye Teh (Oxford &amp;amp; Google DeepMind). Here is a link to
 our &lt;a href=&quot;https://arxiv.org/abs/1512.09327&quot;&gt;arxiv preprint&lt;/a&gt;.&lt;/p&gt;
@@ -33,103 +33,6 @@ our &lt;a href=&quot;https://arxiv.org/abs/1512.09327&quot;&gt;arxiv preprint&lt
   
 
   
-    &lt;h2&gt;References&lt;/h2&gt;
-    &lt;h2 class=&quot;bibliography&quot;&gt;2016&lt;/h2&gt;
-&lt;ul class=&quot;bibliography&quot;&gt;&lt;li&gt;
-
-
-&lt;b&gt;
-L. Hasenclever&lt;/b&gt;,
-
-
-
-
-S. Webb,
-
-
-
-
-T. Lienart,
-
-
-
-
-S. Vollmer,
-
-
-
-
-B. Lakshminarayanan,
-
-
-
-
-C. Blundell,
-
-
-
-
-Y. W. Teh,
-
-&lt;span id=&quot;HasWebLie2015a&quot;&gt;&lt;b&gt;Distributed Bayesian Learning with Stochastic Natural-gradient Expectation Propagation and the Posterior Server&lt;/b&gt;, 2016. &lt;/span&gt;
-
-&lt;br /&gt;
-
-&lt;div id=&quot;HasWebLie2015a-supplementary&quot;&gt;
-  
-  &lt;button onclick=&quot;$('#HasWebLie2015a-abstract').toggle( );$('#HasWebLie2015a-bibtex').hide();&quot;&gt;Abstract&lt;/button&gt;
-  
-  &lt;button onclick=&quot;$('#HasWebLie2015a-bibtex').toggle( );$('#HasWebLie2015a-abstract').hide();&quot;&gt;BibTeX&lt;/button&gt;
-  
-  &lt;form method=&quot;get&quot; action=&quot;https://arxiv.org/abs/1512.09327&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;arXiv&lt;/button&gt;
-  &lt;/form&gt;
-  
-
-  
-  &lt;form method=&quot;get&quot; action=&quot;https://arxiv.org/pdf/1512.09327.pdf&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;PDF&lt;/button&gt;
-  &lt;/form&gt;
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  &lt;form method=&quot;get&quot; action=&quot;https://github.com/BigBayes/PosteriorServer&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;Software&lt;/button&gt;
-  &lt;/form&gt;
-  
-
-  
-
-  
-
-  
-  &lt;div id=&quot;HasWebLie2015a-abstract&quot; style=&quot;display:none;&quot;&gt;
-    &lt;div class=&quot;abstract&quot;&gt;This paper makes two contributions to Bayesian machine learning algorithms. Firstly, we propose stochastic natural gradient expectation propagation (SNEP), a novel alternative to expectation propagation (EP), a popular variational inference algorithm. SNEP is a black box variational algorithm, in that it does not require any simplifying assumptions on the distribution of interest, beyond the existence of some Monte Carlo sampler for estimating the moments of the EP tilted distributions. Further, as opposed to EP which has no guarantee of convergence, SNEP can be shown to be convergent, even when using Monte Carlo moment estimates. Secondly, we propose a novel architecture for distributed Bayesian learning which we call the posterior server. The posterior server allows scalable and robust Bayesian learning in cases where a dataset is stored in a distributed manner across a cluster, with each compute node containing a disjoint subset of data. An independent Monte Carlo sampler is run on each compute node, with direct access only to the local data subset, but which targets an approximation to the global posterior distribution given all data across the whole cluster. This is achieved by using a distributed asynchronous implementation of SNEP to pass messages across the cluster. We demonstrate SNEP and the posterior server on distributed Bayesian learning of logistic regression and neural networks.
-&lt;/div&gt;
-  &lt;/div&gt;
-  
-
-  &lt;div id=&quot;HasWebLie2015a-bibtex&quot; style=&quot;display:none;&quot;&gt;
-    &lt;pre&gt;@unpublished{HasWebLie2015a,
-  author = {Hasenclever, L. and Webb, S. and Lienart, T. and Vollmer, S. and Lakshminarayanan, B. and Blundell, C. and Teh, Y. W.},
-  note = {ArXiv e-prints: 1512.09327},
-  title = {Distributed {B}ayesian Learning with Stochastic Natural-gradient Expectation Propagation and the Posterior Server},
-  year = {2016}
-}
-&lt;/pre&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;a class=&quot;details&quot; href=&quot;/publications/HasWebLie2015a/&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-  
 
 &lt;/div&gt;
 </content>
@@ -138,7 +41,7 @@ Y. W. Teh,
  <entry>
    <title>Relativistic Monte Carlo @ BDL2016</title>
    <link href="http://localhost:4000/2016/11/15/relativistic-monte-carlo/"/>
-   <updated>2016-11-15T00:00:00+01:00</updated>
+   <updated>2016-11-15T00:00:00+00:00</updated>
    <id>http://localhost:4000/2016/11/15/relativistic-monte-carlo</id>
    <content type="html">&lt;p&gt;Our work (joint work with Xiaoyu Lu, Valerio Perrone, Sebastian Vollmer and Yee Whye Teh) on relativistic Monte Carlo was accepted as a contributed talk at the &lt;a href=&quot;http://bayesiandeeplearning.org/&quot;&gt;Bayesian Deep Learning Workshop at NIPS 2016&lt;/a&gt;. Come along at 11:20am on December 10 when Valerio and Xiaoyu will be presenting our work.&lt;/p&gt;
 

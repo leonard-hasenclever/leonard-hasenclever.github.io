@@ -87,6 +87,10 @@
         
       
     
+      
+        
+      
+    
 
     <a class="sidebar-nav-item" href="https://github.com/lqh20">Code</a>
   </nav>
@@ -142,6 +146,8 @@
 
 <p>I am a PhD student in <a href="http://mlcs.stats.ox.ac.uk">Statistics and Machine Learning at the University of Oxford</a> working with <a href="http://www.stats.ox.ac.uk/~teh">Yee Whye Teh</a>. My studies are funded as part of the <a href="http://www.oxwasp-cdt.ac.uk">OxWaSP centre for doctoral training</a>.</p>
 
+<p>I am currently spending time at <a href="http://deepmind.com">DeepMind</a> as an intern. Before that I was visiting the <a href="http://amlab.science.uva.nl/">machine learning group</a> at the University of Amsterdam, where I worked with Max Welling and Jakub Tomczak.</p>
+
 <p>I am interested in Bayesian statistics, machine learning and deep learning. In particular I am working on large scale Bayesian machine learning. Most of my research so far has been on distributed Bayesian learning using stochastic natural gradient expectation propagation. I am also interested in stochastic gradient MCMC methods and variational inference. Occasionally I <a href="blog/index.html">blog</a> about my work.</p>
 
 <p><a href="assets/cv.pdf">Curriculum Vitae</a></p>
@@ -155,6 +161,101 @@
     <h2>Publications</h2>
     <h2 class="bibliography">2017</h2>
 <ul class="bibliography"><li>
+
+
+<b>
+L. Hasenclever</b>,
+
+
+
+
+S. Webb,
+
+
+
+
+T. Lienart,
+
+
+
+
+S. Vollmer,
+
+
+
+
+B. Lakshminarayanan,
+
+
+
+
+C. Blundell,
+
+
+
+
+Y. W. Teh,
+
+<span id="HasWebLie2015a"><b>Distributed Bayesian Learning with Stochastic Natural Gradient Expectation Propagation and the Posterior Server</b>, <i>Journal of Machine Learning Research (To Appear)</i>, 2017. </span>
+
+<br />
+
+<div id="HasWebLie2015a-supplementary">
+  
+  <button onclick="$('#HasWebLie2015a-abstract').toggle( );$('#HasWebLie2015a-bibtex').hide();">Abstract</button>
+  
+  <button onclick="$('#HasWebLie2015a-bibtex').toggle( );$('#HasWebLie2015a-abstract').hide();">BibTeX</button>
+  
+  <form method="get" action="https://arxiv.org/abs/1512.09327">
+    <button type="submit">arXiv</button>
+  </form>
+  
+
+  
+  <form method="get" action="https://arxiv.org/pdf/1512.09327.pdf">
+    <button type="submit">PDF</button>
+  </form>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <form method="get" action="https://github.com/BigBayes/PosteriorServer">
+    <button type="submit">Software</button>
+  </form>
+  
+
+  
+
+  
+
+  
+  <div id="HasWebLie2015a-abstract" style="display:none;">
+    <div class="abstract">This paper makes two contributions to Bayesian machine learning algorithms. Firstly, we propose stochastic natural gradient expectation propagation (SNEP), a novel alternative to expectation propagation (EP), a popular variational inference algorithm. SNEP is a black box variational algorithm, in that it does not require any simplifying assumptions on the distribution of interest, beyond the existence of some Monte Carlo sampler for estimating the moments of the EP tilted distributions. Further, as opposed to EP which has no guarantee of convergence, SNEP can be shown to be convergent, even when using Monte Carlo moment estimates. Secondly, we propose a novel architecture for distributed Bayesian learning which we call the posterior server. The posterior server allows scalable and robust Bayesian learning in cases where a dataset is stored in a distributed manner across a cluster, with each compute node containing a disjoint subset of data. An independent Monte Carlo sampler is run on each compute node, with direct access only to the local data subset, but which targets an approximation to the global posterior distribution given all data across the whole cluster. This is achieved by using a distributed asynchronous implementation of SNEP to pass messages across the cluster. We demonstrate SNEP and the posterior server on distributed Bayesian learning of logistic regression and neural networks.
+</div>
+  </div>
+  
+
+  <div id="HasWebLie2015a-bibtex" style="display:none;">
+    <pre>@article{HasWebLie2015a,
+  author = {Hasenclever, L. and Webb, S. and Lienart, T. and Vollmer, S. and Lakshminarayanan, B. and Blundell, C. and Teh, Y. W.},
+  title = {Distributed {B}ayesian Learning with Stochastic Natural Gradient Expectation Propagation and the Posterior Server},
+  year = {2017},
+  note = {To Appear.},
+  journal = {Journal of Machine Learning Research (To Appear)}
+}
+</pre>
+  </div>
+
+</div>
+<a class="details" href="/publications/HasWebLie2015a/"></a></li>
+<li>
 
 
 
@@ -225,9 +326,18 @@ S J Vollmer,
   </div>
 
 </div>
-<a class="details" href="/publications/LuPerHas2016a/"></a></li></ul>
-<h2 class="bibliography">2016</h2>
-<ul class="bibliography"><li>
+<a class="details" href="/publications/LuPerHas2016a/"></a></li>
+<li>
+
+
+
+T. Nagapetyan,
+
+
+
+
+A. B. Duncan,
+
 
 
 <b>
@@ -236,65 +346,34 @@ L. Hasenclever</b>,
 
 
 
-S. Webb,
+S. J. Vollmer,
 
 
 
 
-T. Lienart,
+L. Szpruch,
 
 
 
 
-S. Vollmer,
+K. Zygalakis,
 
-
-
-
-B. Lakshminarayanan,
-
-
-
-
-C. Blundell,
-
-
-
-
-Y. W. Teh,
-
-<span id="HasWebLie2015a"><b>Distributed Bayesian Learning with Stochastic Natural-gradient Expectation Propagation and the Posterior Server</b>, 2016. </span>
+<span id="Nagapetyan2017"><b>The True Cost of Stochastic Gradient Langevin Dynamics</b>, Jun-2017. </span>
 
 <br />
 
-<div id="HasWebLie2015a-supplementary">
+<div id="Nagapetyan2017-supplementary">
   
-  <button onclick="$('#HasWebLie2015a-abstract').toggle( );$('#HasWebLie2015a-bibtex').hide();">Abstract</button>
+  <button onclick="$('#Nagapetyan2017-abstract').toggle( );$('#Nagapetyan2017-bibtex').hide();">Abstract</button>
   
-  <button onclick="$('#HasWebLie2015a-bibtex').toggle( );$('#HasWebLie2015a-abstract').hide();">BibTeX</button>
-  
-  <form method="get" action="https://arxiv.org/abs/1512.09327">
-    <button type="submit">arXiv</button>
-  </form>
-  
-
-  
-  <form method="get" action="https://arxiv.org/pdf/1512.09327.pdf">
-    <button type="submit">PDF</button>
-  </form>
+  <button onclick="$('#Nagapetyan2017-bibtex').toggle( );$('#Nagapetyan2017-abstract').hide();">BibTeX</button>
   
 
   
 
   
-
-  
-
-  
-
-  
-  <form method="get" action="https://github.com/BigBayes/PosteriorServer">
-    <button type="submit">Software</button>
+  <form method="get" action="http://arxiv.org/abs/1706.02692">
+    <button type="submit">URL</button>
   </form>
   
 
@@ -303,24 +382,34 @@ Y. W. Teh,
   
 
   
-  <div id="HasWebLie2015a-abstract" style="display:none;">
-    <div class="abstract">This paper makes two contributions to Bayesian machine learning algorithms. Firstly, we propose stochastic natural gradient expectation propagation (SNEP), a novel alternative to expectation propagation (EP), a popular variational inference algorithm. SNEP is a black box variational algorithm, in that it does not require any simplifying assumptions on the distribution of interest, beyond the existence of some Monte Carlo sampler for estimating the moments of the EP tilted distributions. Further, as opposed to EP which has no guarantee of convergence, SNEP can be shown to be convergent, even when using Monte Carlo moment estimates. Secondly, we propose a novel architecture for distributed Bayesian learning which we call the posterior server. The posterior server allows scalable and robust Bayesian learning in cases where a dataset is stored in a distributed manner across a cluster, with each compute node containing a disjoint subset of data. An independent Monte Carlo sampler is run on each compute node, with direct access only to the local data subset, but which targets an approximation to the global posterior distribution given all data across the whole cluster. This is achieved by using a distributed asynchronous implementation of SNEP to pass messages across the cluster. We demonstrate SNEP and the posterior server on distributed Bayesian learning of logistic regression and neural networks.
-</div>
+
+  
+
+  
+
+  
+
+  
+  <div id="Nagapetyan2017-abstract" style="display:none;">
+    <div class="abstract">The problem of posterior inference is central to Bayesian statistics and a wealth of Markov Chain Monte Carlo (MCMC) methods have been proposed to obtain asymptotically correct samples from the posterior. As datasets in applications grow larger and larger, scalability has emerged as a central problem for MCMC methods. Stochastic Gradient Langevin Dynamics (SGLD) and related stochastic gradient Markov Chain Monte Carlo methods offer scalability by using stochastic gradients in each step of the simulated dynamics. While these methods are asymptotically unbiased if the stepsizes are reduced in an appropriate fashion, in practice constant stepsizes are used. This introduces a bias that is often ignored. In this paper we study the mean squared error of Lipschitz functionals in strongly log- concave models with i.i.d. data of growing data set size and show that, given a batchsize, to control the bias of SGLD the stepsize has to be chosen so small that the computational cost of reaching a target accuracy is roughly the same for all batchsizes. Using a control variate approach, the cost can be reduced dramatically. The analysis is performed by considering the algorithms as noisy discretisations of the Langevin SDE which correspond to the Euler method if the full data set is used. An important observation is that the 1scale of the step size is determined by the stability criterion if the accuracy is required for consistent credible intervals. Experimental results confirm our theoretical findings.</div>
   </div>
   
 
-  <div id="HasWebLie2015a-bibtex" style="display:none;">
-    <pre>@unpublished{HasWebLie2015a,
-  author = {Hasenclever, L. and Webb, S. and Lienart, T. and Vollmer, S. and Lakshminarayanan, B. and Blundell, C. and Teh, Y. W.},
-  note = {ArXiv e-prints: 1512.09327},
-  title = {Distributed {B}ayesian Learning with Stochastic Natural-gradient Expectation Propagation and the Posterior Server},
-  year = {2016}
+  <div id="Nagapetyan2017-bibtex" style="display:none;">
+    <pre>@unpublished{Nagapetyan2017,
+  archiveprefix = {arXiv},
+  arxivid = {1706.02692},
+  month = jun,
+  author = {Nagapetyan, T. and Duncan, A. B. and Hasenclever, L. and Vollmer, S. J. and Szpruch, L. and Zygalakis, K.},
+  eprint = {1706.02692},
+  title = {{The True Cost of Stochastic Gradient Langevin Dynamics}},
+  year = {2017}
 }
 </pre>
   </div>
 
 </div>
-<a class="details" href="/publications/HasWebLie2015a/"></a></li></ul>
+<a class="details" href="/publications/Nagapetyan2017/"></a></li></ul>
 <h2 class="bibliography">2014</h2>
 <ul class="bibliography"><li>
 
