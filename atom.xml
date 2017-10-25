@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Leonard Hasenclever</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2017-08-20T18:44:06+01:00</updated>
- <id>http://localhost:4000</id>
+ <link href="http://lqh20.github.io/atom.xml" rel="self"/>
+ <link href="http://lqh20.github.io/"/>
+ <updated>2017-10-25T20:13:19+01:00</updated>
+ <id>http://lqh20.github.io</id>
  <author>
    <name>Leonard Hasenclever</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Stochastic Natural Gradient EP @ NIPS</title>
-   <link href="http://localhost:4000/2016/11/21/SNEP/"/>
+   <link href="http://lqh20.github.io/2016/11/21/SNEP/"/>
    <updated>2016-11-21T00:00:00+00:00</updated>
-   <id>http://localhost:4000/2016/11/21/SNEP</id>
+   <id>http://lqh20.github.io/2016/11/21/SNEP</id>
    <content type="html">&lt;p&gt;I will present our work on distributed Bayesian learning with stochastic natural gradient EP at the &lt;a href=&quot;http://approximateinference.org/&quot;&gt;Advances in Approximate Bayesian Inference Workshop&lt;/a&gt; and the &lt;a href=&quot;http://bayesiandeeplearning.org/&quot;&gt;Bayesian Deep Learning Workshop&lt;/a&gt; at NIPS 2016. It’s joint work with Stefan Webb, Thibaut Lienart, Sebastian Vollmer (all Oxford), Balaji Lakshminarayanan, Charles Blundell (both Google DeepMind) and Yee Whye Teh (Oxford &amp;amp; Google DeepMind). Here is a link to
 our &lt;a href=&quot;https://arxiv.org/abs/1512.09327&quot;&gt;arxiv preprint&lt;/a&gt;.&lt;/p&gt;
 
@@ -40,9 +40,9 @@ our &lt;a href=&quot;https://arxiv.org/abs/1512.09327&quot;&gt;arxiv preprint&lt
  
  <entry>
    <title>Relativistic Monte Carlo @ BDL2016</title>
-   <link href="http://localhost:4000/2016/11/15/relativistic-monte-carlo/"/>
+   <link href="http://lqh20.github.io/2016/11/15/relativistic-monte-carlo/"/>
    <updated>2016-11-15T00:00:00+00:00</updated>
-   <id>http://localhost:4000/2016/11/15/relativistic-monte-carlo</id>
+   <id>http://lqh20.github.io/2016/11/15/relativistic-monte-carlo</id>
    <content type="html">&lt;p&gt;Our work (joint work with Xiaoyu Lu, Valerio Perrone, Sebastian Vollmer and Yee Whye Teh) on relativistic Monte Carlo was accepted as a contributed talk at the &lt;a href=&quot;http://bayesiandeeplearning.org/&quot;&gt;Bayesian Deep Learning Workshop at NIPS 2016&lt;/a&gt;. Come along at 11:20am on December 10 when Valerio and Xiaoyu will be presenting our work.&lt;/p&gt;
 
 &lt;p&gt;We are excited about Relativistic Monte Carlo as a way to derive an MCMC algorithm more robust to hyperparameter choice. Here is the abstract:&lt;/p&gt;

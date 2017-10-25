@@ -144,13 +144,13 @@
 
 <h2 id="about-me">About me</h2>
 
-<p>I am a PhD student in <a href="http://mlcs.stats.ox.ac.uk">Statistics and Machine Learning at the University of Oxford</a> working with <a href="http://www.stats.ox.ac.uk/~teh">Yee Whye Teh</a>. My studies are funded as part of the <a href="http://www.oxwasp-cdt.ac.uk">OxWaSP centre for doctoral training</a>.</p>
+<p>I am a Research Scientist at <a href="http://deepmind.com">DeepMind</a> and a PhD student in <a href="http://mlcs.stats.ox.ac.uk">Statistics and Machine Learning at the University of Oxford</a> working with <a href="http://www.stats.ox.ac.uk/~teh">Yee Whye Teh</a>. I am part of the <a href="http://www.oxwasp-cdt.ac.uk">OxWaSP centre for doctoral training</a>.</p>
 
-<p>I am currently spending time at <a href="http://deepmind.com">DeepMind</a> as an intern. Before that I was visiting the <a href="http://amlab.science.uva.nl/">machine learning group</a> at the University of Amsterdam, where I worked with Max Welling and Jakub Tomczak.</p>
+<p>Before joining DeepMind I visited the <a href="http://amlab.science.uva.nl/">machine learning group</a> at the University of Amsterdam, where I worked with Max Welling and Jakub Tomczak.</p>
 
 <p>I am interested in Bayesian statistics, machine learning and deep learning. In particular I am working on large scale Bayesian machine learning. Most of my research so far has been on distributed Bayesian learning using stochastic natural gradient expectation propagation. I am also interested in stochastic gradient MCMC methods and variational inference. Occasionally I <a href="blog/index.html">blog</a> about my work.</p>
 
-<p><a href="assets/cv.pdf">Curriculum Vitae</a></p>
+<p><a href="assets/cv.pdf">Curriculum Vitae</a> (as of June 2017)</p>
 
 <div class="post-content">
 
@@ -164,39 +164,39 @@
 
 
 <b>
-L. Hasenclever</b>,
+Leonard Hasenclever</b>,
 
 
 
 
-S. Webb,
+Stefan Webb,
 
 
 
 
-T. Lienart,
+Thibaut Lienart,
 
 
 
 
-S. Vollmer,
+Sebastian Vollmer,
 
 
 
 
-B. Lakshminarayanan,
+Balaji Lakshminarayanan,
 
 
 
 
-C. Blundell,
+Charles Blundell,
 
 
 
 
-Y. W. Teh,
+Yee Whye Teh,
 
-<span id="HasWebLie2015a"><b>Distributed Bayesian Learning with Stochastic Natural Gradient Expectation Propagation and the Posterior Server</b>, <i>Journal of Machine Learning Research (To Appear)</i>, 2017. </span>
+<span id="HasWebLie2015a"><b>Distributed Bayesian Learning with Stochastic Natural Gradient Expectation Propagation and the Posterior Server</b>, <i>Journal of Machine Learning Research</i>, vol. 18, no. 106, pp. 1–37, 2017. </span>
 
 <br />
 
@@ -218,6 +218,10 @@ Y. W. Teh,
   
 
   
+  <form method="get" action="http://jmlr.org/papers/v18/16-478.html">
+    <button type="submit">URL</button>
+  </form>
+  
 
   
 
@@ -238,17 +242,19 @@ Y. W. Teh,
   
   <div id="HasWebLie2015a-abstract" style="display:none;">
     <div class="abstract">This paper makes two contributions to Bayesian machine learning algorithms. Firstly, we propose stochastic natural gradient expectation propagation (SNEP), a novel alternative to expectation propagation (EP), a popular variational inference algorithm. SNEP is a black box variational algorithm, in that it does not require any simplifying assumptions on the distribution of interest, beyond the existence of some Monte Carlo sampler for estimating the moments of the EP tilted distributions. Further, as opposed to EP which has no guarantee of convergence, SNEP can be shown to be convergent, even when using Monte Carlo moment estimates. Secondly, we propose a novel architecture for distributed Bayesian learning which we call the posterior server. The posterior server allows scalable and robust Bayesian learning in cases where a dataset is stored in a distributed manner across a cluster, with each compute node containing a disjoint subset of data. An independent Monte Carlo sampler is run on each compute node, with direct access only to the local data subset, but which targets an approximation to the global posterior distribution given all data across the whole cluster. This is achieved by using a distributed asynchronous implementation of SNEP to pass messages across the cluster. We demonstrate SNEP and the posterior server on distributed Bayesian learning of logistic regression and neural networks.
-</div>
+    </div>
   </div>
   
 
   <div id="HasWebLie2015a-bibtex" style="display:none;">
     <pre>@article{HasWebLie2015a,
-  author = {Hasenclever, L. and Webb, S. and Lienart, T. and Vollmer, S. and Lakshminarayanan, B. and Blundell, C. and Teh, Y. W.},
-  title = {Distributed {B}ayesian Learning with Stochastic Natural Gradient Expectation Propagation and the Posterior Server},
+  author = {Hasenclever, Leonard and Webb, Stefan and Lienart, Thibaut and Vollmer, Sebastian and Lakshminarayanan, Balaji and Blundell, Charles and Teh, Yee Whye},
+  title = {Distributed Bayesian Learning with Stochastic Natural Gradient Expectation Propagation and the Posterior Server},
+  journal = {Journal of Machine Learning Research},
   year = {2017},
-  note = {To Appear.},
-  journal = {Journal of Machine Learning Research (To Appear)}
+  volume = {18},
+  number = {106},
+  pages = {1-37}
 }
 </pre>
   </div>
@@ -368,6 +374,10 @@ K. Zygalakis,
   
   <button onclick="$('#Nagapetyan2017-bibtex').toggle( );$('#Nagapetyan2017-abstract').hide();">BibTeX</button>
   
+  <form method="get" action="https://arxiv.org/abs/1706.02692">
+    <button type="submit">arXiv</button>
+  </form>
+  
 
   
 
@@ -397,8 +407,6 @@ K. Zygalakis,
 
   <div id="Nagapetyan2017-bibtex" style="display:none;">
     <pre>@unpublished{Nagapetyan2017,
-  archiveprefix = {arXiv},
-  arxivid = {1706.02692},
   month = jun,
   author = {Nagapetyan, T. and Duncan, A. B. and Hasenclever, L. and Vollmer, S. J. and Szpruch, L. and Zygalakis, K.},
   eprint = {1706.02692},
