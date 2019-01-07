@@ -167,7 +167,186 @@
 
   
     <h2>Publications</h2>
-    <h2 class="bibliography">2018</h2>
+    <h2 class="bibliography">2019</h2>
+<ul class="bibliography"><li>
+
+
+
+Alexandre Galashov,
+
+
+
+
+Siddhant Jayakumar,
+
+
+
+<b>
+Leonard Hasenclever</b>,
+
+
+
+
+Dhruva Tirumala,
+
+
+
+
+Jonathan Schwarz,
+
+
+
+
+Guillaume Desjardins,
+
+
+
+
+Wojtek M. Czarnecki,
+
+
+
+
+Yee Whye Teh,
+
+
+
+
+Razvan Pascanu,
+
+
+
+
+Nicolas Heess,
+
+<span id="galashov2018information"><b>Information asymmetry in KL-regularized RL</b>, in <i>International Conference on Learning Representations</i>, 2019. </span>
+
+<br />
+
+<div id="galashov2018information-supplementary">
+  
+  <button onclick="$('#galashov2018information-bibtex').toggle( );$('#galashov2018information-abstract').hide();">BibTeX</button>
+  
+
+  
+
+  
+  <form method="get" action="https://openreview.net/forum?id=S1lqMn05Ym">
+    <button type="submit">URL</button>
+  </form>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div id="galashov2018information-bibtex" style="display:none;">
+    <pre>@inproceedings{galashov2018information,
+  title = {Information asymmetry in {KL}-regularized {RL}},
+  author = {Galashov, Alexandre and Jayakumar, Siddhant and Hasenclever, Leonard and Tirumala, Dhruva and Schwarz, Jonathan and Desjardins, Guillaume and Czarnecki, Wojtek M. and Teh, Yee Whye and Pascanu, Razvan and Heess, Nicolas},
+  booktitle = {International Conference on Learning Representations},
+  year = {2019}
+}
+</pre>
+  </div>
+
+</div>
+<a class="details" href="/publications/galashov2018information/"></a></li>
+<li>
+
+
+
+Josh Merel*,
+
+
+
+<b>
+Leonard Hasenclever*</b>,
+
+
+
+
+Alexandre Galashov,
+
+
+
+
+Arun Ahuja,
+
+
+
+
+Vu Pham,
+
+
+
+
+Greg Wayne,
+
+
+
+
+Yee Whye Teh,
+
+
+
+
+Nicolas Heess,
+
+<span id="merel2018neural"><b>Neural Probabilistic Motor Primitives for Humanoid Control</b>, in <i>International Conference on Learning Representations</i>, 2019. </span>
+
+<br />
+
+<div id="merel2018neural-supplementary">
+  
+  <button onclick="$('#merel2018neural-bibtex').toggle( );$('#merel2018neural-abstract').hide();">BibTeX</button>
+  
+
+  
+
+  
+  <form method="get" action="https://openreview.net/forum?id=BJl6TjRcY7">
+    <button type="submit">URL</button>
+  </form>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div id="merel2018neural-bibtex" style="display:none;">
+    <pre>@inproceedings{merel2018neural,
+  title = {Neural Probabilistic Motor Primitives for Humanoid Control},
+  author = {Merel*, Josh and Hasenclever*, Leonard and Galashov, Alexandre and Ahuja, Arun and Pham, Vu and Wayne, Greg and Teh, Yee Whye and Heess, Nicolas},
+  booktitle = {International Conference on Learning Representations},
+  year = {2019}
+}
+</pre>
+  </div>
+
+</div>
+<a class="details" href="/publications/merel2018neural/"></a></li></ul>
+<h2 class="bibliography">2018</h2>
 <ul class="bibliography"><li>
 
 
@@ -342,6 +521,163 @@ Razvan Pascanu,
 <ul class="bibliography"><li>
 
 
+
+T. Nagapetyan,
+
+
+
+
+A. B. Duncan,
+
+
+
+<b>
+L. Hasenclever</b>,
+
+
+
+
+S. J. Vollmer,
+
+
+
+
+L. Szpruch,
+
+
+
+
+K. Zygalakis,
+
+<span id="Nagapetyan2017"><b>The True Cost of Stochastic Gradient Langevin Dynamics</b>, Jun-2017. </span>
+
+<br />
+
+<div id="Nagapetyan2017-supplementary">
+  
+  <button onclick="$('#Nagapetyan2017-abstract').toggle( );$('#Nagapetyan2017-bibtex').hide();">Abstract</button>
+  
+  <button onclick="$('#Nagapetyan2017-bibtex').toggle( );$('#Nagapetyan2017-abstract').hide();">BibTeX</button>
+  
+  <form method="get" action="https://arxiv.org/abs/1706.02692">
+    <button type="submit">arXiv</button>
+  </form>
+  
+
+  
+
+  
+  <form method="get" action="http://arxiv.org/abs/1706.02692">
+    <button type="submit">URL</button>
+  </form>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <div id="Nagapetyan2017-abstract" style="display:none;">
+    <div class="abstract">The problem of posterior inference is central to Bayesian statistics and a wealth of Markov Chain Monte Carlo (MCMC) methods have been proposed to obtain asymptotically correct samples from the posterior. As datasets in applications grow larger and larger, scalability has emerged as a central problem for MCMC methods. Stochastic Gradient Langevin Dynamics (SGLD) and related stochastic gradient Markov Chain Monte Carlo methods offer scalability by using stochastic gradients in each step of the simulated dynamics. While these methods are asymptotically unbiased if the stepsizes are reduced in an appropriate fashion, in practice constant stepsizes are used. This introduces a bias that is often ignored. In this paper we study the mean squared error of Lipschitz functionals in strongly log- concave models with i.i.d. data of growing data set size and show that, given a batchsize, to control the bias of SGLD the stepsize has to be chosen so small that the computational cost of reaching a target accuracy is roughly the same for all batchsizes. Using a control variate approach, the cost can be reduced dramatically. The analysis is performed by considering the algorithms as noisy discretisations of the Langevin SDE which correspond to the Euler method if the full data set is used. An important observation is that the 1scale of the step size is determined by the stability criterion if the accuracy is required for consistent credible intervals. Experimental results confirm our theoretical findings.</div>
+  </div>
+  
+
+  <div id="Nagapetyan2017-bibtex" style="display:none;">
+    <pre>@unpublished{Nagapetyan2017,
+  month = jun,
+  author = {Nagapetyan, T. and Duncan, A. B. and Hasenclever, L. and Vollmer, S. J. and Szpruch, L. and Zygalakis, K.},
+  eprint = {1706.02692},
+  title = {{The True Cost of Stochastic Gradient Langevin Dynamics}},
+  year = {2017}
+}
+</pre>
+  </div>
+
+</div>
+<a class="details" href="/publications/Nagapetyan2017/"></a></li>
+<li>
+
+
+
+X Lu,
+
+
+
+
+V Perrone,
+
+
+
+<b>
+L Hasenclever</b>,
+
+
+
+
+Y W Teh,
+
+
+
+
+S J Vollmer,
+
+<span id="LuPerHas2016a"><b>Relativistic Monte Carlo</b>, in <i>AISTATS</i>, 2017. </span>
+
+<br />
+
+<div id="LuPerHas2016a-supplementary">
+  
+  <button onclick="$('#LuPerHas2016a-abstract').toggle( );$('#LuPerHas2016a-bibtex').hide();">Abstract</button>
+  
+  <button onclick="$('#LuPerHas2016a-bibtex').toggle( );$('#LuPerHas2016a-abstract').hide();">BibTeX</button>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <div id="LuPerHas2016a-abstract" style="display:none;">
+    <div class="abstract">Hamiltonian Monte Carlo (HMC) is a popular Markov chain Monte Carlo (MCMC) algorithm that generates proposals for a Metropolis-Hastings algorithm by simulating the dynamics of a Hamiltonian system. However, HMC is sensitive to large time discretizations and performs poorly if there is a mismatch between the spatial geometry of the target distribution and the scales of the momentum distribution. In particular the mass matrix of HMC is hard to tune well. In order to alleviate these problems we propose relativistic Hamiltonian Monte Carlo, a version of HMC based on relativistic dynamics that introduce a maximum velocity on particles. We also derive stochastic gradient versions of the algorithm and show that the resulting algorithms bear interesting relationships to gradient clipping, RMSprop, Adagrad and Adam, popular optimisation methods in deep learning. Based on this, we develop relativistic stochastic gradient descent by taking the zero-temperature limit of relativistic stochastic gradient Hamiltonian Monte Carlo. In experiments we show that the relativistic algorithms perform better than classical Newtonian variants and Adam.</div>
+  </div>
+  
+
+  <div id="LuPerHas2016a-bibtex" style="display:none;">
+    <pre>@inproceedings{LuPerHas2016a,
+  annote = {ArXiv e-prints: 1609.04388},
+  author = {Lu, X and Perrone, V and Hasenclever, L and Teh, Y W and Vollmer, S J},
+  booktitle = {AISTATS},
+  title = {{Relativistic Monte Carlo}},
+  year = {2017}
+}
+</pre>
+  </div>
+
+</div>
+<a class="details" href="/publications/LuPerHas2016a/"></a></li>
+<li>
+
+
 <b>
 Leonard Hasenclever</b>,
 
@@ -439,164 +775,7 @@ Yee Whye Teh,
   </div>
 
 </div>
-<a class="details" href="/publications/HasWebLie2015a/"></a></li>
-<li>
-
-
-
-X Lu,
-
-
-
-
-V Perrone,
-
-
-
-<b>
-L Hasenclever</b>,
-
-
-
-
-Y W Teh,
-
-
-
-
-S J Vollmer,
-
-<span id="LuPerHas2016a"><b>Relativistic Monte Carlo</b>, in <i>AISTATS</i>, 2017. </span>
-
-<br />
-
-<div id="LuPerHas2016a-supplementary">
-  
-  <button onclick="$('#LuPerHas2016a-abstract').toggle( );$('#LuPerHas2016a-bibtex').hide();">Abstract</button>
-  
-  <button onclick="$('#LuPerHas2016a-bibtex').toggle( );$('#LuPerHas2016a-abstract').hide();">BibTeX</button>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <div id="LuPerHas2016a-abstract" style="display:none;">
-    <div class="abstract">Hamiltonian Monte Carlo (HMC) is a popular Markov chain Monte Carlo (MCMC) algorithm that generates proposals for a Metropolis-Hastings algorithm by simulating the dynamics of a Hamiltonian system. However, HMC is sensitive to large time discretizations and performs poorly if there is a mismatch between the spatial geometry of the target distribution and the scales of the momentum distribution. In particular the mass matrix of HMC is hard to tune well. In order to alleviate these problems we propose relativistic Hamiltonian Monte Carlo, a version of HMC based on relativistic dynamics that introduce a maximum velocity on particles. We also derive stochastic gradient versions of the algorithm and show that the resulting algorithms bear interesting relationships to gradient clipping, RMSprop, Adagrad and Adam, popular optimisation methods in deep learning. Based on this, we develop relativistic stochastic gradient descent by taking the zero-temperature limit of relativistic stochastic gradient Hamiltonian Monte Carlo. In experiments we show that the relativistic algorithms perform better than classical Newtonian variants and Adam.</div>
-  </div>
-  
-
-  <div id="LuPerHas2016a-bibtex" style="display:none;">
-    <pre>@inproceedings{LuPerHas2016a,
-  annote = {ArXiv e-prints: 1609.04388},
-  author = {Lu, X and Perrone, V and Hasenclever, L and Teh, Y W and Vollmer, S J},
-  booktitle = {AISTATS},
-  title = {{Relativistic Monte Carlo}},
-  year = {2017}
-}
-</pre>
-  </div>
-
-</div>
-<a class="details" href="/publications/LuPerHas2016a/"></a></li>
-<li>
-
-
-
-T. Nagapetyan,
-
-
-
-
-A. B. Duncan,
-
-
-
-<b>
-L. Hasenclever</b>,
-
-
-
-
-S. J. Vollmer,
-
-
-
-
-L. Szpruch,
-
-
-
-
-K. Zygalakis,
-
-<span id="Nagapetyan2017"><b>The True Cost of Stochastic Gradient Langevin Dynamics</b>, Jun-2017. </span>
-
-<br />
-
-<div id="Nagapetyan2017-supplementary">
-  
-  <button onclick="$('#Nagapetyan2017-abstract').toggle( );$('#Nagapetyan2017-bibtex').hide();">Abstract</button>
-  
-  <button onclick="$('#Nagapetyan2017-bibtex').toggle( );$('#Nagapetyan2017-abstract').hide();">BibTeX</button>
-  
-  <form method="get" action="https://arxiv.org/abs/1706.02692">
-    <button type="submit">arXiv</button>
-  </form>
-  
-
-  
-
-  
-  <form method="get" action="http://arxiv.org/abs/1706.02692">
-    <button type="submit">URL</button>
-  </form>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <div id="Nagapetyan2017-abstract" style="display:none;">
-    <div class="abstract">The problem of posterior inference is central to Bayesian statistics and a wealth of Markov Chain Monte Carlo (MCMC) methods have been proposed to obtain asymptotically correct samples from the posterior. As datasets in applications grow larger and larger, scalability has emerged as a central problem for MCMC methods. Stochastic Gradient Langevin Dynamics (SGLD) and related stochastic gradient Markov Chain Monte Carlo methods offer scalability by using stochastic gradients in each step of the simulated dynamics. While these methods are asymptotically unbiased if the stepsizes are reduced in an appropriate fashion, in practice constant stepsizes are used. This introduces a bias that is often ignored. In this paper we study the mean squared error of Lipschitz functionals in strongly log- concave models with i.i.d. data of growing data set size and show that, given a batchsize, to control the bias of SGLD the stepsize has to be chosen so small that the computational cost of reaching a target accuracy is roughly the same for all batchsizes. Using a control variate approach, the cost can be reduced dramatically. The analysis is performed by considering the algorithms as noisy discretisations of the Langevin SDE which correspond to the Euler method if the full data set is used. An important observation is that the 1scale of the step size is determined by the stability criterion if the accuracy is required for consistent credible intervals. Experimental results confirm our theoretical findings.</div>
-  </div>
-  
-
-  <div id="Nagapetyan2017-bibtex" style="display:none;">
-    <pre>@unpublished{Nagapetyan2017,
-  month = jun,
-  author = {Nagapetyan, T. and Duncan, A. B. and Hasenclever, L. and Vollmer, S. J. and Szpruch, L. and Zygalakis, K.},
-  eprint = {1706.02692},
-  title = {{The True Cost of Stochastic Gradient Langevin Dynamics}},
-  year = {2017}
-}
-</pre>
-  </div>
-
-</div>
-<a class="details" href="/publications/Nagapetyan2017/"></a></li></ul>
+<a class="details" href="/publications/HasWebLie2015a/"></a></li></ul>
 <h2 class="bibliography">2014</h2>
 <ul class="bibliography"><li>
 
